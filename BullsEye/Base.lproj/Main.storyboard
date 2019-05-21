@@ -98,6 +98,7 @@
                     </view>
                     <connections>
                         <outlet property="slider" destination="rwa-EW-n0S" id="gCg-tg-XLD"/>
+                        <outlet property="targetLabel" destination="n0V-Xt-aiA" id="y5R-kN-62C"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
