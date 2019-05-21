@@ -10,13 +10,18 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var currentValue: Int = 50
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
     
     @IBAction func showAlert() {
-        let alert = UIAlertController(title: "Hello, world", message: "This is my first app!", preferredStyle: .alert)
+        
+        let message = "The value of the slider is now: \(currentValue)"
+        
+        let alert = UIAlertController(title: "Hello, world", message: message, preferredStyle: .alert)
         
         let action = UIAlertAction(title: "Awesome", style: .default, handler: nil)
         
@@ -27,7 +32,8 @@ class ViewController: UIViewController {
     }
     
     @IBAction func sliderMoved(_ slider: UISlider) {
-        print("The value of the slider is now: \(slider.value)")
+        let roundedValue = slider.value.rounded()
+        currentValue = Int(roundedValue)
     }
 
 }
