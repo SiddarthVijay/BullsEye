@@ -26,6 +26,8 @@ class ViewController: UIViewController {
         currentValue = Int(roundedValue)
         startNewGame()
         
+        // can also say
+        // let thumbImageNormal = UIImage(named: "SliderThumb-Normal")!
         let thumbImageNormal = #imageLiteral(resourceName: "SliderThumb-Highlighted")
         slider.setThumbImage(thumbImageNormal, for: .normal)
         
@@ -33,7 +35,8 @@ class ViewController: UIViewController {
         slider.setThumbImage(thumbImageHighlighted, for: .highlighted)
         
         let insets = UIEdgeInsets(top: 0, left: 14, bottom: 0, right: 14)
-        // Basically says we dont want the leftmost 14 points and the right most 14 points to stretch
+        // Says we dont want the leftmost 14 points and the right most 14 points to stretch, and that we dont want the top most and bottom most 0 points to stretch
+        // Basically means stretch the middle points to fit the image
         
         let trackLeftImage = #imageLiteral(resourceName: "SliderTrackLeft")
         let trackLeftResizeable = trackLeftImage.resizableImage(withCapInsets: insets)
