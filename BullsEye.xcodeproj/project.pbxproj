@@ -15,6 +15,7 @@
 		0D14FE6822899AF80054600B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D14FE6622899AF80054600B /* Main.storyboard */; };
 		0D14FE6A22899B0A0054600B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D14FE6922899B0A0054600B /* Assets.xcassets */; };
 		0D14FE6D22899B0A0054600B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D14FE6B22899B0A0054600B /* LaunchScreen.storyboard */; };
+		F13B7B81229D3E8400D9F35A /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F13B7B80229D3E8400D9F35A /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		0D14FE6922899B0A0054600B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0D14FE6C22899B0A0054600B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0D14FE6E22899B0A0054600B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F13B7B80229D3E8400D9F35A /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F13B7B81229D3E8400D9F35A /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +49,7 @@
 			children = (
 				0D14FE6122899AF80054600B /* BullsEye */,
 				0D14FE6022899AF80054600B /* Products */,
+				F13B7B7F229D3E8400D9F35A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +75,14 @@
 				0D0A991F2296844700C967B1 /* BullsEye.html */,
 			);
 			path = BullsEye;
+			sourceTree = "<group>";
+		};
+		F13B7B7F229D3E8400D9F35A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F13B7B80229D3E8400D9F35A /* WebKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
